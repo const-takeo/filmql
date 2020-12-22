@@ -1,0 +1,13 @@
+type Movie {
+    id:Int!
+    title:String!
+    year:Int!
+    genres:[String!]
+    summary:String
+    medium_cover_image:String
+}
+
+type Query {
+    movie(id:Int!):Movie!
+    movies:[Movie]
+}
